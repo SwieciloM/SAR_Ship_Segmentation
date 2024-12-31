@@ -1,0 +1,21 @@
+architektura: U-Net
+augumentacja: BoxPaste
+	Augmented images : 7368
+	Original images : 3922
+	Total images : 11290
+	Original ships : 11271
+	Synthetic ships : 14513 + 7623 = 22136
+	Total ships : 33407
+przetrenowany: tak (resnet34)
+LEARNING_RATE: 5e-5 (Adam)
+TARGET_SHAPE: (512, 512, 3)
+BATCH_SIZE: 32
+EPOCHS: 30
+SHUFFLE: True
+najlepsze metryki val: val_loss = 0.12, val_precision = 0.99, val_recall = 0.86, val_accuracy = 0.002, val_mean_iou = 0.82
+najlepsze metryki test (val_acc, val_mean_io_u): val_loss = 0.12, val_precision = 0.90, val_recall = 0.85, val_accuracy = 0.002, val_mean_iou = 0.79
+
+val_acc = val_mean_io_u (30)
+vall_los (26)
+vall_recall (24)
+val_precision (2)
