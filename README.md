@@ -2,11 +2,6 @@
 
 As part of the project, 4 U-Net neural network models were developed and tested. These models were applied to segment ships in images obtained from synthetic aperture radar (SAR). The thesis involved selection of a suitable dataset (HRSID), its preprocessing, creation of a data generator, application of augmentation techniques, and training and testing of the neural network models. Finaly project included development of the ShipPaste augmentation algorithm, which increased the number of vessels in the images, allowing the models to perform better in tests. To accelerate work, a transfer learning technique was applied using ResNet34 neural network as well as cloud computing in form of Google Colab platform. Tests carried out showed high performance of the models in vessel segmentation in open water, and satisfactory results in complex port areas.
 
-<div align="center">
-    <img src="https://github.com/user-attachments/assets/c71a9a3a-b13b-4030-b8d1-711c3c6cebe8" width="779" height="594" />
-    <img src="https://github.com/user-attachments/assets/8c4a220c-193b-4a80-ab89-6a08a7061af8" width="779" height="594" />
-</div>
-
 ## Models performance
 
 | Model         | Dice Loss | Precision | Recall | Mean IoU |
@@ -15,6 +10,11 @@ As part of the project, 4 U-Net neural network models were developed and tested.
 | UNetResAug    | 0.200     | 0.831     | 0.448  | 0.639    |
 | UNetResSP1    | 0.154     | 0.884     | 0.624  | 0.722    |
 | UNetResSP2    | 0.097     | 0.907     | 0.861  | 0.800    |
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/c71a9a3a-b13b-4030-b8d1-711c3c6cebe8" width="779" height="594" />
+    <img src="https://github.com/user-attachments/assets/8c4a220c-193b-4a80-ab89-6a08a7061af8" width="779" height="594" />
+</div>
 
 ## Project Organization
 
